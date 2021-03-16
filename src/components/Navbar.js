@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
       <nav className="navbar navbar-expand-lg" style={{color: 'white'}}>
-      <a className="navbar navbar-brand me" href="/">Kelli King</a>
+      <Link to="/" className="navbar navbar-brand me" >Kelli King</Link>
       <button className="navbar-toggler navbar-dark" type="button" data-toggle="collapse" 
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
       aria-expanded="false" aria-label="Toggle navigation">
@@ -12,13 +13,13 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-              <a className="nav-link" href="/contact">Contact</a>
+              <Link to="/contact" className="nav-link" >Contact</Link>
           </li>
           <li className="nav-item">
-              <a className="nav-link active" href="/portfolio">Portfolio</a>
+              <Link to="/portfolio" className="nav-link active">Portfolio</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">About <span className="sr-only">(current)</span></a>
+            <Link to="/" className="nav-link">About <span className="sr-only">(current)</span></Link>
           </li>        
         </ul>
       </div>      
