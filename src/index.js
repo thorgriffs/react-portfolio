@@ -7,13 +7,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 // import $ from 'jquery';
 // import Popper from 'popper.js';
+import { Router } from "react-router";
+import { createBrowserHistory } from "history";
+
+const history = createBrowserHistory();
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Router history={history}>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </Router>,
+  node
 );
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
