@@ -5,7 +5,7 @@ const About = () => {
     <div className="container mt-3">
         <div className="row">
             <div className="col">
-                <img src="./assets/profile.png" alt="profile picture" className="profile-img img rounded-circle float-md-left mr-4 mt-4" />
+                <img src={`${process.env.PUBLIC_URL}/assets/profile.png`} alt="profile picture" className="profile-img img rounded-circle float-md-left mr-4 mt-4" />
                 <h3 className="ml-4">Hi! I'm Kelli.</h3>
                 <p>I'm an aspiring full stack web developer in Columbus, Ohio, currently enrolled in The Ohio State University Coding Boot Camp.</p>
                 <p>I've spent the majority of my career working in IT for businesses in the Financial Services, Smart Grid Energy, 
