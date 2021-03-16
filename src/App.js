@@ -4,19 +4,23 @@ import About from './components/About'
 import Navbar from './components/Navbar'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
+import Footer from './components/Footer'
+
+
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
+        {/* <header className="App-header"> */}
           <Navbar />
           <Switch>
             <Route exact path='/' component={About} />
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/portfolio' component={Portfolio} />
           </Switch>
-        </header>
+          <Footer />
+        {/* </header> */}
       </div>
     </Router>
   );

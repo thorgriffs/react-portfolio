@@ -1,75 +1,59 @@
 import React from 'react'
+import Project from './Project'
+
+const projects = [
+    {
+        id: 1,
+        name: 'LibMaker 3000',
+        url: 'https://makeyourmadlib.herokuapp.com/',
+        img: './assets/libmaker.png',
+        repo: 'https://github.com/thorgriffs/make-your-madlibs'
+    },
+    {
+        id: 2,
+        name: 'Eat-Da-Burger',
+        url: 'https://whispering-thicket-86767.herokuapp.com/',
+        img: './assets/eat-da-burger.png',
+        repo: 'https://github.com/thorgriffs/burger'
+    },
+    {
+        id: 3,
+        name: 'Password Generator',
+        url: 'https://thorgriffs.github.io/pw-gen/',
+        img: './assets/generated-password.png',
+        repo: 'https://github.com/thorgriffs/pw-gen'
+    },
+    {
+        id: 4,
+        name: 'Weather Dashboard',
+        url: 'https://thorgriffs.github.io/weather-dashboard/',
+        img: './assets/weather-dashboard.png',
+        repo: 'https://github.com/thorgriffs/weather-dashboard'
+    },
+    {
+        id: 5,
+        name: 'Work Day Scheduler',
+        url: 'https://thorgriffs.github.io/work-day-scheduler/',
+        img: './assets/work-day-scheduler.png',
+        repo: 'https://github.com/thorgriffs/work-day-scheduler'
+    },
+    {
+        id: 6,
+        name: 'Taco Adventure',
+        url: 'https://thorgriffs.github.io/taco-adventure/',
+        img: './assets/taco-adventure.png',
+        repo: 'https://github.com/thorgriffs/taco-adventure'
+    }
+]
 
 const Portfolio = () => {
     return (
-        <div classNameName="container ml-auto mr-auto card-deck mt-3">
+        <div className="container ml-auto mr-auto card-deck mt-3">
+            {projects.map((project) => (
+                    <Project key={project.id} project={project} />
+                ))}
             <div className="row mt-5">
-                <div className=" col-md-4">
-                    <div className="card m-3 p-2 text-center">
-                        <a href="https://makeyourmadlib.herokuapp.com/" target="_blank" className="card-link">
-                            <img className="card-img-top img-fluid mx-auto" src="./assets/libmaker.png" alt="Card image cap" />
-                        </a>          
-                        <div classNameName="card-body">
-                            <h5 className="card-title">LibMaker 3000</h5>            
-                            <a href="https://github.com/thorgriffs/make-your-madlibs" target="_blank" className="card-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div className=" col-md-4">
-                    <div className="card m-3 p-2 text-center">
-                        <a href="https://whispering-thicket-86767.herokuapp.com/" target="_blank" className="card-link">
-                            <img className="card-img-top img-fluid mx-auto" src="./assets/eat-da-burger.png" alt="Card image cap" />
-                        </a>          
-                        <div className="card-body">
-                            <h5 className="card-title">Eat-Da-Burger</h5>            
-                            <a href="https://github.com/thorgriffs/burger" target="_blank" className="card-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div className=" col-md-4">
-                    <div className="card m-3 p-2 text-center">
-                        <a href="https://thorgriffs.github.io/pw-gen/" target="_blank" className="card-link">
-                            <img className="card-img-top img-fluid mx-auto" src="./assets/generated-password.png" alt="Card image cap" />
-                        </a>          
-                        <div className="card-body">
-                            <h5 className="card-title">Password Generator</h5>
-                            <a href="https://github.com/thorgriffs/pw-gen" target="_blank" className="card-link" >GitHub</a>
-                        </div>
-                    </div>
-                </div>      
-                <div className=" col-md-4">
-                    <div className="card m-3 p-2 text-center">
-                        <a href="https://thorgriffs.github.io/weather-dashboard/" target="_blank" className="card-link" >
-                            <img className="card-img-top img-fluid mx-auto" src="./assets/weather-dashboard.png" alt="Card image cap" />
-                        </a>          
-                        <div className="card-body">
-                            <h5 className="card-title">Weather Dashboard</h5>            
-                            <a href="https://github.com/thorgriffs/weather-dashboard" target="_blank" className="card-link" >GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div className=" col-md-4">
-                    <div className="card m-3 p-2 text-center">
-                        <a href="https://thorgriffs.github.io/work-day-scheduler/" target="_blank" className="card-link" >
-                            <img className="card-img-top img-fluid mx-auto" src="./assets/work-day-scheduler.png" alt="Card image cap" />
-                        </a>          
-                        <div className="card-body">
-                            <h5 className="card-title">Work Day Scheduler</h5>            
-                            <a href="https://github.com/thorgriffs/work-day-scheduler" target="_blank" className="card-link" >GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            <div className=" col-md-4">
-                <div className="card m-3 p-2 text-center">
-                    <a href="https://thorgriffs.github.io/taco-adventure/" target="_blank" className="card-link">
-                        <img className="card-img-top img-fluid mx-auto" src="./assets/taco-adventure.png" alt="Card image cap" />
-                    </a>          
-                    <div className="card-body">
-                        <h5 className="card-title">Taco Adventure</h5>            
-                        <a href="https://github.com/thorgriffs/taco-adventure" target="_blank" className="card-link" >GitHub</a>
-                    </div>
-                </div>
-            </div>      
+                
         </div>
   </div>
     )

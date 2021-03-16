@@ -2,11 +2,11 @@ import React from 'react'
 
 const About = () => {
     return (
-    <div class="container mt-3">
-        <div class="row">
-            <div class="col">
-                <img src="assets/profile.png" alt="profile picture" class="profile-img img rounded-circle float-md-left mr-4 mt-4" />
-                <h3 class="ml-4">Hi! I'm Kelli.</h3>
+    <div className="container mt-3">
+        <div className="row">
+            <div className="col">
+                <img src="assets/profile.png" alt="profile picture" className="profile-img img rounded-circle float-md-left mr-4 mt-4" />
+                <h3 className="ml-4">Hi! I'm Kelli.</h3>
                 <p>I'm an aspiring full stack web developer in Columbus, Ohio, currently enrolled in The Ohio State University Coding Boot Camp.</p>
                 <p>I've spent the majority of my career working in IT for businesses in the Financial Services, Smart Grid Energy, 
                 and Insurance sectors. I started as a software tester, but have since worked as a Business Analyst, QA/BA Manager, 
