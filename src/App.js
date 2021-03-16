@@ -6,8 +6,6 @@ import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
 import Footer from './components/Footer'
 
-
-
 function App() {
   return (
     <Router>
