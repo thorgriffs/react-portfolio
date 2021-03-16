@@ -89,7 +89,7 @@ p {
 
 /* Portfolio cards */
 .card-img-top {
-  width: 500px;
+  /* width: 500px; */
   height: 200px;
   border: solid #000000;
   margin: 1px;
