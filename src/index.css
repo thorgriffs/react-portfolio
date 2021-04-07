@@ -115,4 +115,9 @@ p {
 footer {
   margin-top: 30px;
   text-align: center;
+  opacity: .5;
+}
+
+footer p {
+  font-size: 14px;
 }

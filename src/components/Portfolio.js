@@ -4,25 +4,31 @@ import Project from './Project'
 const projects = [
     {
         id: 1,
+        name: 'IDC Eats',
+        url: 'https://idc-eats.herokuapp.com/',
+        img: './assets/idc-eats.png',
+        repo: 'https://github.com/thorgriffs/idc-eats'
+    },{
+        id: 2,
         name: 'LibMaker 3000',
         url: 'https://makeyourmadlib.herokuapp.com/',
         img: './assets/libmaker.png',
         repo: 'https://github.com/thorgriffs/make-your-madlibs'
     },
     {
-        id: 2,
+        id: 3,
         name: 'Eat-Da-Burger',
         url: 'https://whispering-thicket-86767.herokuapp.com/',
         img: './assets/eat-da-burger.png',
         repo: 'https://github.com/thorgriffs/burger'
     },
-    {
-        id: 3,
-        name: 'Password Generator',
-        url: 'https://thorgriffs.github.io/pw-gen/',
-        img: './assets/generated-password.png',
-        repo: 'https://github.com/thorgriffs/pw-gen'
-    },
+    // {
+    //     id: 3,
+    //     name: 'Password Generator',
+    //     url: 'https://thorgriffs.github.io/pw-gen/',
+    //     img: './assets/generated-password.png',
+    //     repo: 'https://github.com/thorgriffs/pw-gen'
+    // },
     {
         id: 4,
         name: 'Weather Dashboard',
